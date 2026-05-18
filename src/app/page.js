@@ -321,7 +321,7 @@ export default function Home() {
         .sdesc2 { font-size:0.84rem; color:var(--muted2); line-height:1.65; }
 
         /* STATS */
-        .stats { display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--border); border:1px solid var(--border); border-radius:18px; overflow:hidden; margin-top:80px; }
+        .stats { display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--border); border:1px solid var(--border); border-radius:18px; overflow:hidden; margin-top:80px; }
         .stat { background:var(--surface); padding:52px 32px; text-align:center; }
         .stn { font-family:'Outfit',sans-serif; font-size:clamp(2.4rem,5vw,3.6rem); font-weight:900; letter-spacing:-0.03em; background:var(--grad-text); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
         .stl { font-size:0.84rem; color:var(--muted); margin-top:8px; font-weight:500; }
@@ -526,6 +526,7 @@ export default function Home() {
       >
         <div ref={reg("stats")} style={fade("stats")} className="stats">
           {[
+            { n: "2K+", l: "Active users" },
             { n: "500+", l: "Opportunities scanned daily" },
             { n: "10+", l: "Fields & skill sets" },
             { n: "100%", l: "Free — no app needed" },
