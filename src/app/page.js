@@ -1,9 +1,10 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
 const WHATSAPP_LINK =
-  "https://wa.me/1234567890?text=Hi%20Nexopra%2C%20I%20want%20to%20join!";
+  "https://wa.me/2348149488987";
 
 const opportunities = [
   {
@@ -362,6 +363,7 @@ export default function Home() {
 
       {/* NAV */}
       <nav className={scrolled ? "nav-scrolled" : ""}>
+       <Link href={"#"}>
         <Image
           src="/logo1.png"
           alt="Nexopra"
@@ -369,7 +371,7 @@ export default function Home() {
           width={120}
           height={40}
           style={{ objectFit: "contain" }}
-        />
+        /></Link>
         <ul className="nav-links">
           <li>
             <a href="#how">How it works</a>
